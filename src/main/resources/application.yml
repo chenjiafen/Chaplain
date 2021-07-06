@@ -1,0 +1,26 @@
+server:
+  port: 8789
+spring:
+  application:
+    name: tensquare_gathering #指定服务名
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tensquare_gathering?useUnicode=true&amp;characterEncoding=UTF8
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: com.chenjiafeng.entity
+  configuration:
+    map-underscore-to-camel-case: true #解决属性名和数据不一致的驼峰命名法
+    call-setters-on-nulls: true # 调用setter null，返回空也必须设置到bean中（直接执行sql专用）
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #日志输出sql
+
+
+logging:
+  pattern:
+    #格式化，只能输出日期和内容
+    console: "%d - %msg%n"
+  path: src/main/resources/log
+  file: ${logging.path}/base.log
