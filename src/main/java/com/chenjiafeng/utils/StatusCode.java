@@ -1,4 +1,4 @@
-package com.chenjiafeng.common;
+package com.chenjiafeng.utils;
 
 /**
  * @author chenjiafeng2

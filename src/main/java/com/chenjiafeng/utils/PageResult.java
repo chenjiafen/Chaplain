@@ -1,4 +1,4 @@
-package com.chenjiafeng.common;
+package com.chenjiafeng.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,11 +1,11 @@
 server:
-  port: 8789
+  port: 8889
 spring:
   application:
     name: tensquare_gathering #指定服务名
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/tensquare_gathering?useUnicode=true&amp;characterEncoding=UTF8
+    url: jdbc:mysql://localhost:3306/tensquare_user?useUnicode=true&amp;characterEncoding=UTF8
     username: root
     password: root
 
@@ -24,3 +24,8 @@ logging:
     console: "%d - %msg%n"
   path: src/main/resources/log
   file: ${logging.path}/base.log
+
+jwt:
+  config:
+        ttl: 5
+        key: codemao
