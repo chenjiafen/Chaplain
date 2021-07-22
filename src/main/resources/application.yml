@@ -29,3 +29,8 @@ jwt:
   config:
         ttl: 5
         key: codemao
+
+#decisionEngine:
+#              url: http://localhost:8889/ex/doPostGetJson
+Chaplin:
+    host: http://localhost:8889

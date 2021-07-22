@@ -8,12 +8,14 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.Date;
 
+import static org.apache.naming.SelectorContext.prefix;
+
 /**
  * @author chenjiafeng2
  * @create 2021-07-05 19:25
  * @desc Jwt工具
  **/
-@ConfigurationProperties("jwt.config")
+@ConfigurationProperties(prefix="jwt.config")
 public class JwtUtil {
     //超时时间(分)
     private long ttl;

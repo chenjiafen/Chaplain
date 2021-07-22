@@ -12,13 +12,16 @@
     <groupId>com.chenjiafeng</groupId>
     <artifactId>Chaplain</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <my.version>2.1.4.RELEASE</my.version>
+    </properties>
+
     <name>Chaplain</name>
     <description>Chaplain project for Spring Boot</description>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
-
         </dependency>
         <!-- SpringBootTest基础依赖 -->
         <dependency>
@@ -83,7 +86,25 @@
             <artifactId>httpclients</artifactId>
             <version>1.7.1</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-feign -->
+        <!-- 开启feign  -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-openfeign</artifactId>-->
+<!--            <version>${my.version}</version>-->
+<!--        </dependency>-->
+        <!-- Spring Cloud Netflix Eureka Server 依赖 -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-eureka</artifactId>-->
+<!--            <version>1.4.7.RELEASE</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; 监控机制 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-actuator</artifactId>-->
+<!--            <version>${my.version}</version>-->
+<!--        </dependency>-->
     </dependencies>
     <build>
         <resources>

@@ -24,7 +24,7 @@ public class ExternalService {
         JSONObject jsonObject = null;
         try {
             StringEntity s = new StringEntity(date.toString());
-            s.setContentEncoding("UTF-8");
+//            s.setContentEncoding("UTF-8");
             s.setContentType("application/json");
             post.setEntity(s);
 //            post.addHeader("content-type", "text/xml");
