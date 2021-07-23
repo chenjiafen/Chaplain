@@ -32,5 +32,5 @@ jwt:
 
 #decisionEngine:
 #              url: http://localhost:8889/ex/doPostGetJson
-Chaplin:
-    host: http://localhost:8889
+chaplin:
+    host: http://localhost:8889/admin/login

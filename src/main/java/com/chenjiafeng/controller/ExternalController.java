@@ -3,6 +3,7 @@ package com.chenjiafeng.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.chenjiafeng.entity.User;
 import com.chenjiafeng.service.ExternalService;
+import com.chenjiafeng.service.doPost;
 import com.chenjiafeng.utils.Result;
 import com.chenjiafeng.utils.StatusCode;
 import lombok.extern.slf4j.Slf4j;
@@ -57,17 +58,12 @@ public class ExternalController {
 //        JSONObject token = cloudUserFeignClient.getToken(user);
 //        return  new Result(true, StatusCode.OK,"查询成功",token);
 //    }
-//    @PostMapping(value = "/test01")
-//    public Result getClient01(@RequestBody User user) {
-//        final String uri = "http://localhost:8080/springrestexample/employees";
-//        RestTemplate restTemplate = new RestTemplate();
-//        HttpHeaders headers = new HttpHeaders();
-//        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-//        HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
-//
-//        ResponseEntity<String> result = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
-//
-//        System.out.println(result);
-//        return  null;
-//    }
+    @Autowired
+    private doPost doP;
+
+    @GetMapping(value = "/test01")
+    public Result getClient01(@RequestBody User user) {
+        String token = doP.postLogin(user.getMobile(),user.getPassword());
+        return new Result(true, 200, "查询成功", token);
+    }
 }
