@@ -28,7 +28,8 @@ public class ExternalService {
         HttpPost post = new HttpPost(host);
         JSONObject jsonObject = null;
         try {
-            StringEntity s = new StringEntity(date.toString());
+            StringEntity s = new StringEntity
+                    (date.toString());
             s.setContentType("application/json");
             post.setEntity(s);
             HttpResponse res = client.execute(post);

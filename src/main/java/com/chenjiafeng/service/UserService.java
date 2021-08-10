@@ -1,6 +1,8 @@
 package com.chenjiafeng.service;
 
 import com.chenjiafeng.dao.UserDao;
+import com.chenjiafeng.dao.UserRepository;
+import com.chenjiafeng.entity.Article;
 import com.chenjiafeng.entity.User;
 import com.chenjiafeng.utils.IdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,4 +62,13 @@ public class UserService {
             userDao.deleteById(id);
         }
     }
+//    @Autowired
+//    UserRepository userRepository;
+//    public Article getById(String id){
+//        return userRepository.findOne(id);
+//    }
+//
+//    public void save(Article userInfo){
+//        userRepository.save(userInfo);
+//    }
 }

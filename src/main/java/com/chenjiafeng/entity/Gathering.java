@@ -8,7 +8,7 @@ import lombok.ToString;
 /**
  * @author chenjiafeng2
  * @create 2021-07-05 18:06
- * @desc 实体类
+ * @desc 活动表
  **/
 
 @Data

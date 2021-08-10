@@ -15,9 +15,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    private String  id;
+    private String id;
     private String mobile;//手机号码
-        private String password;//密码
+    private String password;//密码
     private String nickname;//昵称
     private String sex;//性别
     private java.util.Date birthday;//出生年月日

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenjiafeng.dao.ArticleSearchDao">
+
+    <insert id="save" parameterType="com.chenjiafeng.entity.Article">
+    insert into tb_article (id,title,content,state)
+    values
+    ( #{id,jdbcType=VARCHAR},
+      #{title,jdbcType=VARCHAR},
+      #{content,jdbcType=LONGVARCHAR},
+      #{state,jdbcType=VARCHAR}
+      )
+  </insert>
+    <select id="findByTitleOrContentLike"  resultType="com.chenjiafeng.entity.Article">
+        select * from tb_article where title=#{title} and content=#{content} limit #{pageable.page},#{pageable.size}
+    </select>
+</mapper>

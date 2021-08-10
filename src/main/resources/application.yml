@@ -5,9 +5,17 @@ spring:
     name: tensquare_gathering #指定服务名
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/tensquare_user?useUnicode=true&amp;characterEncoding=UTF8
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF8
     username: root
     password: root
+  data:
+    elasticsearch:
+      cluster‐nodes: 127.0.0.1:9200
+#  http:
+#    encoding:
+#      charset: utf-8
+#      enabled: true
+#      force: true
 
 mybatis:
   mapper-locations: classpath*:/mapper/**/*.xml
