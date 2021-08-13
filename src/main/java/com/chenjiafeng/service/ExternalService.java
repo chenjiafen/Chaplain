@@ -24,7 +24,7 @@ public class ExternalService {
 
     public JSONObject doPost(JSONObject date) {
         HttpClient client = HttpClients.createDefault();
-//        String host = "http://localhost:8889/admin/login";
+//        String host = "http://localhost:8889/admin";
         HttpPost post = new HttpPost(host);
         JSONObject jsonObject = null;
         try {

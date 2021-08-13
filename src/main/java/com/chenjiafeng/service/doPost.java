@@ -31,7 +31,7 @@ public class doPost {
 ////        headers.setHeader(HttpHeaders.CONTENT_TYPE," application/json; charset=UTF-8");
 //        HashMap<Object, Object> map = new HashMap<>();
 //        map.put("Content-Type","application/json");
-        String url="http://localhost:8889/admin/login";
+        String url="http://localhost:8889/admin";
 //        JSONObject obj = new JSONObject();//放入body中的json参数
 //        obj.put("loginname", name);
 //        obj.put("password", pass);

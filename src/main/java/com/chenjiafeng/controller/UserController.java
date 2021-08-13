@@ -88,4 +88,15 @@ public class UserController {
         return new Result(true, 200, "删除成功");
     }
 
+
+
+    @GetMapping("/info")
+    public  Result userInfo(@RequestParam String token){
+
+
+
+        return new Result(true, 200, "查询成功");
+    }
+
+
 }

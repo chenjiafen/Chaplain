@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 //@FeignClient(url = "${Chaplin.host}",name = "my-feign-client")
 //public interface CloudUserFeignClient {
 //
-//    @RequestMapping(value = "/user/login", method = RequestMethod.POST)
+//    @RequestMapping(value = "/user", method = RequestMethod.POST)
 //    public JSONObject getToken(@RequestBody User user);
 //
 //
